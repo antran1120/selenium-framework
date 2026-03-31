@@ -8,6 +8,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import java.time.Duration;
 
@@ -30,15 +33,19 @@ public abstract class BaseTest {
         driver.get(ConfigReader.getInstance().getBaseUrl());
         tlDriver.set(driver);
     }
-
-    @AfterMethod(alwaysRun = true)
+@AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             ScreenshotUtil.capture(getDriver(), result.getName());
+            attachScreenshot(getDriver()); 
         }
         if (getDriver() != null) {
             getDriver().quit();
             tlDriver.remove();
         }
+    }
+    @Attachment(value = "Ảnh chụp lỗi nhãn tiền", type = "image/png")
+    public byte[] attachScreenshot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }

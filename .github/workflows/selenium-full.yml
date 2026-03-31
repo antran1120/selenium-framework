@@ -1,0 +1,41 @@
+name: Selenium Test Suite with Allure Report
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  run-tests-and-report:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Lấy mã nguồn (Checkout Code)
+        uses: actions/checkout@v4
+
+      - name: Cài đặt Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Chạy TestNG Suite (có kèm Allure Listener)
+        # Sử dụng windows-latest để trình duyệt rỗng hiện lên không bị lỗi kẹt UI
+        run: mvn clean test -DsuiteXmlFile=testng-smoke.xml -Denv=dev
+        continue-on-error: true
+
+      - name: Sinh tự động thư mục Báo Cáo Allure (Generate Report)
+        run: mvn allure:report
+        continue-on-error: true
+
+      - name: Đẩy báo cáo tĩnh lên GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: target/site/allure-maven-plugin

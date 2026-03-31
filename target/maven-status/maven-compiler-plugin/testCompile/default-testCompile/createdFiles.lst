@@ -1,0 +1,5 @@
+tests\CartTest.class
+tests\LoginDDTTest.class
+tests\FlakySimulationTest.class
+tests\LoginTest.class
+tests\UserLoginTest.class

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-31T14:57:50 ICT" name="Smoke Test Suite" finished-at="2026-03-31T14:57:54 ICT" duration-ms="3193">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:tests.LoginTest@1349883]" name="testLoginSuccess" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:tests.LoginTest@1349883]" name="testLoginSuccess" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-31T14:57:50 ICT" name="Login Smoke Tests" finished-at="2026-03-31T14:57:54 ICT" duration-ms="3193">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1349883]" started-at="2026-03-31T14:57:50 ICT" name="setUp" finished-at="2026-03-31T14:57:53 ICT" duration-ms="2165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:tests.LoginTest@1349883]" started-at="2026-03-31T14:57:53 ICT" name="testLoginSuccess" description="Verify successful login with valid credentials" finished-at="2026-03-31T14:57:53 ICT" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1349883]" started-at="2026-03-31T14:57:53 ICT" name="tearDown" finished-at="2026-03-31T14:57:54 ICT" duration-ms="206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginSuccess status=SUCCESS method=LoginTest.testLoginSuccess()[pri:0, instance:tests.LoginTest@1349883] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Login Smoke Tests -->
+  </suite> <!-- Smoke Test Suite -->
+</testng-results>
