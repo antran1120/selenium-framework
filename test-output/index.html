@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Smoke_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Smoke Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Smoke_Test_Suite" class="navigator-link ">
+                    <span>D:\__MACOSX\lab9\SeleniumFramework\src\test\resources\testng-smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Smoke_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Smoke_Test_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Smoke_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 3 failed,  3 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods failed suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods failed suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="testAddItemToCart">testAddItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.FlakySimulationTest" class="method navigator-link" hash-for-method="testFlakyScenario">testFlakyScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)">testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods skipped suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods skipped suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="testAddItemToCart">testAddItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.FlakySimulationTest" class="method navigator-link" hash-for-method="testFlakyScenario">testFlakyScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)">testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Smoke_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods passed suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods passed suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testSmokeLoginFromExcel(problem_user, secret_sauce, inventory.html, Problem user)">testSmokeLoginFromExcel(problem_user, secret_sauce, inventory.html, Problem user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testSmokeLoginFromExcel(standard_user, secret_sauce, inventory.html, Valid user)">testSmokeLoginFromExcel(standard_user, secret_sauce, inventory.html, Valid user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_Test_Suite" class="panel Smoke_Test_Suite">
+          <div class="suite-Smoke_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.FlakySimulationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlakyScenario">
+                  </a> <!-- testFlakyScenario -->
+                  <span class="method-name">testFlakyScenario</span>
+                  <div class="stack-trace">java.lang.AssertionError: Mô phỏng lỗi mạng tạm thời — lần 2
+	at tests.FlakySimulationTest.testFlakyScenario(FlakySimulationTest.java:16)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test mô phỏng flaky — fail 2 lần đầu, pass lần thứ 3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-failed -->
+          <div class="suite-Smoke_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddItemToCart">
+                  </a> <!-- testAddItemToCart -->
+                  <span class="method-name">testAddItemToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78015c474655cd98f4ae090d971d0eb2, findElement {value=password, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53926}, goog:processID: 25664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53926/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78015c474655cd98f4ae090d971d0eb2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at framework.base.BasePage.waitAndType(BasePage.java:42)
+	at framework.pages.LoginPage.login(LoginPage.java:28)
+	at tests.CartTest.testAddItemToCart(CartTest.java:15)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that user can add an item to the cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-failed -->
+          <div class="suite-Smoke_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginDDTTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)">
+                  </a> <!-- testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user) -->
+                  <span class="method-name">testSmokeLoginFromExcel</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce,inventory.html,Glitch user)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b059473536e983fed7fbf58a90afbda, findElement {value=user-name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53527}, goog:processID: 23736, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53527/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b059473536e983fed7fbf58a90afbda
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at framework.base.BasePage.waitAndType(BasePage.java:42)
+	at framework.pages.LoginPage.login(LoginPage.java:27)
+	at tests.LoginDDTTest.testSmokeLoginFromExcel(LoginDDTTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test valid login from Excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-failed -->
+          <div class="suite-Smoke_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddItemToCart">
+                  </a> <!-- testAddItemToCart -->
+                  <span class="method-name">testAddItemToCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: Số lượng sản phẩm trong giỏ hàng không đúng expected [1] but found [0]
+	at tests.CartTest.testAddItemToCart(CartTest.java:18)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that user can add an item to the cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-skipped -->
+          <div class="suite-Smoke_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.FlakySimulationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlakyScenario">
+                  </a> <!-- testFlakyScenario -->
+                  <span class="method-name">testFlakyScenario</span>
+                  <div class="stack-trace">java.lang.AssertionError: Mô phỏng lỗi mạng tạm thời — lần 1
+	at tests.FlakySimulationTest.testFlakyScenario(FlakySimulationTest.java:16)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test mô phỏng flaky — fail 2 lần đầu, pass lần thứ 3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-skipped -->
+          <div class="suite-Smoke_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.LoginDDTTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)">
+                  </a> <!-- testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user) -->
+                  <span class="method-name">testSmokeLoginFromExcel</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce,inventory.html,Glitch user)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd7d085eb6f72d384a78fb9056529a18, findElement {value=.inventory_list, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56762}, goog:processID: 24164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56762/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7d085eb6f72d384a78fb9056529a18
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at framework.base.BasePage.isElementVisible(BasePage.java:64)
+	at framework.pages.InventoryPage.isLoaded(InventoryPage.java:29)
+	at tests.LoginDDTTest.testSmokeLoginFromExcel(LoginDDTTest.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test valid login from Excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-skipped -->
+          <div class="suite-Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                  <em>
+(Verify successful login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-passed -->
+          <div class="suite-Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginDDTTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSmokeLoginFromExcel(problem_user, secret_sauce, inventory.html, Problem user)">
+                  </a> <!-- testSmokeLoginFromExcel(problem_user, secret_sauce, inventory.html, Problem user) -->
+                  <span class="method-name">testSmokeLoginFromExcel</span>
+                  <span class="parameters">(problem_user,secret_sauce,inventory.html,Problem user)</span>
+                  <em>
+(Test valid login from Excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSmokeLoginFromExcel(standard_user, secret_sauce, inventory.html, Valid user)">
+                  </a> <!-- testSmokeLoginFromExcel(standard_user, secret_sauce, inventory.html, Valid user) -->
+                  <span class="method-name">testSmokeLoginFromExcel</span>
+                  <span class="parameters">(standard_user,secret_sauce,inventory.html,Valid user)</span>
+                  <em>
+(Test valid login from Excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-passed -->
+        </div> <!-- panel Smoke_Test_Suite -->
+        <div panel-name="test-xml-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\__MACOSX\lab9\SeleniumFramework\src\test\resources\testng-smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;Smoke Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;framework.utils.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;SauceDemo Smoke Tests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CartTest&quot;/&gt;
+      &lt;class name=&quot;tests.FlakySimulationTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginDDTTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.UserLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SauceDemo Smoke Tests --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SauceDemo Smoke Tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddItemToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFlakyScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginSuccess</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddItemToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFlakyScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginSuccess</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSmokeLoginFromExcel</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Test_Suite');
+function tableData_Smoke_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAddItemToCart')
+data.setCell(0, 2, 'tests.CartTest')
+data.setCell(0, 3, 16081);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddItemToCart')
+data.setCell(1, 2, 'tests.CartTest')
+data.setCell(1, 3, 15548);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSmokeLoginFromExcel')
+data.setCell(2, 2, 'tests.LoginDDTTest')
+data.setCell(2, 3, 15440);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSmokeLoginFromExcel')
+data.setCell(3, 2, 'tests.LoginDDTTest')
+data.setCell(3, 3, 2894);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSmokeLoginFromExcel')
+data.setCell(4, 2, 'tests.LoginDDTTest')
+data.setCell(4, 3, 1879);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSmokeLoginFromExcel')
+data.setCell(5, 2, 'tests.LoginDDTTest')
+data.setCell(5, 3, 1834);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLoginSuccess')
+data.setCell(6, 2, 'tests.LoginTest')
+data.setCell(6, 3, 837);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testFlakyScenario')
+data.setCell(7, 2, 'tests.FlakySimulationTest')
+data.setCell(7, 3, 12);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testFlakyScenario')
+data.setCell(8, 2, 'tests.FlakySimulationTest')
+data.setCell(8, 3, 4);
+window.suiteTableData['Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <div id="times-div-Smoke_Test_Suite">
+              </div> <!-- times-div-Smoke_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.UserLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLoginFromJson</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLoginInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">testLoginLockedOutUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testRemoveItemFromCart</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginDDTTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testNegativeLoginFromExcel</span>
+                <br/>
+                <span class="ignored-method-name">testBoundaryLoginFromExcel</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FlakySimulationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSmokeLoginFromExcel(standard_user, secret_sauce, inventory.html, Valid user)</span>
+                <span class="method-start">3786 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddItemToCart</span>
+                <span class="method-start">3786 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FlakySimulationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFlakyScenario</span>
+                <span class="method-start">4670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testFlakyScenario status=SKIP method=FlakySimulationTest.testFlakyScenario()[pri:0,...)</span>
+                <span class="method-start">4695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">5159 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSmokeLoginFromExcel status=SUCCESS method=LoginDDTTest.testSmokeLoginFromExcel(...)</span>
+                <span class="method-start">5624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">6596 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FlakySimulationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFlakyScenario</span>
+                <span class="method-start">7403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testFlakyScenario status=FAILURE method=FlakySimulationTest.testFlakyScenario()[pri...)</span>
+                <span class="method-start">7415 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">7981 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSmokeLoginFromExcel(problem_user, secret_sauce, inventory.html, Problem user)</span>
+                <span class="method-start">8514 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">9953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSmokeLoginFromExcel status=SUCCESS method=LoginDDTTest.testSmokeLoginFromExcel(...)</span>
+                <span class="method-start">10395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">10551 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginSuccess status=SUCCESS method=LoginTest.testLoginSuccess()[pri:0, instance...)</span>
+                <span class="method-start">10792 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)</span>
+                <span class="method-start">12203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSmokeLoginFromExcel status=SKIP method=LoginDDTTest.testSmokeLoginFromExcel(jav...)</span>
+                <span class="method-start">15103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">15278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSmokeLoginFromExcel(performance_glitch_user, secret_sauce, inventory.html, Glitch user)</span>
+                <span class="method-start">16919 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testAddItemToCart status=SKIP method=CartTest.testAddItemToCart()[pri:0, instance:t...)</span>
+                <span class="method-start">19868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">19988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddItemToCart</span>
+                <span class="method-start">22503 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=testSmokeLoginFromExcel status=FAILURE method=LoginDDTTest.testSmokeLoginFromExcel(...)</span>
+                <span class="method-start">32361 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=testAddItemToCart status=FAILURE method=CartTest.testAddItemToCart()[pri:0, instanc...)</span>
+                <span class="method-start">38052 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

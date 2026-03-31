@@ -1,0 +1,7 @@
+[
+  { "username": "standard_user", "password": "secret_sauce", "role": "user", "expectSuccess": true, "description": "Valid user login" },
+  { "username": "locked_out_user", "password": "secret_sauce", "role": "user", "expectSuccess": false, "description": "Locked out user login" },
+  { "username": "problem_user", "password": "secret_sauce", "role": "user", "expectSuccess": true, "description": "Problem user login" },
+  { "username": "performance_glitch_user", "password": "secret_sauce", "role": "user", "expectSuccess": true, "description": "Glitch user login" },
+  { "username": "error_user", "password": "secret_sauce", "role": "user", "expectSuccess": true, "description": "Error user login" }
+]
